@@ -45,6 +45,19 @@ public class Zoo {
 
         } else if (input.contains(commands.getFirst())) {
             animals.forEach(Animal::sayHello);
+        } else if (input.contains(commands.get(1))) {
+
+            animals.forEach(animal -> {
+                if (animal instanceof Herbivore) {
+                    ((Herbivore) animal).eatLeaves();
+                }
+            });
+        } else if (input.contains(commands.get(2))) {
+            animals.forEach(animal -> {
+                if (animal instanceof Carnivore) {
+                    ((Carnivore) animal).eatMeat();
+                }
+            });
         } else {
             System.out.println("Unknown command: " + input);
         }
