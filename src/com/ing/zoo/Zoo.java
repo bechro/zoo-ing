@@ -11,15 +11,15 @@ public class Zoo {
         commands[2] = "give meat";
         commands[3] = "perform trick";
 
-        Lion henk = new Lion();
+        Animal henk = new Lion();
         henk.name = "henk";
-        Hippo elsa = new Hippo();
+        Animal elsa = new Hippo();
         elsa.name = "elsa";
-        Pig dora = new Pig();
+        Animal dora = new Pig();
         dora.name = "dora";
-        Tiger wally = new Tiger();
+        Animal wally = new Tiger();
         wally.name = "wally";
-        Zebra marty = new Zebra();
+        Animal marty = new Zebra();
         marty.name = "marty";
 
         Scanner scanner = new Scanner(System.in);
