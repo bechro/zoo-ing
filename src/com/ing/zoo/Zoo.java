@@ -27,6 +27,12 @@ public class Zoo {
         Animal marty = new Zebra();
         marty.name = "marty";
         animals.add(marty);
+        Animal pingu = new Penguin();
+        pingu.name = "pingu";
+        animals.add(pingu);
+        Animal chimp = new Chimpanzee();
+        chimp.name = "chimp";
+        animals.add(chimp);
 
         Scanner scanner = new Scanner(System.in);
         System.out.print("Voer uw command in: ");
