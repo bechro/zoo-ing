@@ -1,7 +1,6 @@
 package com.ing.zoo;
 
 public class Zebra extends Animal implements Herbivore {
-    public String trick;
 
     public Zebra() {
     }
