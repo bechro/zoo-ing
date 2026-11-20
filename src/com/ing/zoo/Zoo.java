@@ -54,7 +54,7 @@ public class Zoo {
         // Split input into command and name if input has whitespace, filter then on name.
         // If name is found, say hello to that animal, else say no animal found with name.
         if (input.contains(commands.getFirst()) && input.contains(" ")) {
-            String name = input.split(" ",2)[1];
+            String name = input.split(" ", 2)[1];
 
             animals.stream()
                     .filter(animal -> animal.name.equals(name))
