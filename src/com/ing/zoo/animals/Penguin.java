@@ -1,4 +1,7 @@
-package com.ing.zoo;
+package com.ing.zoo.animals;
+
+import com.ing.zoo.interfaces.Carnivore;
+import com.ing.zoo.interfaces.Trickster;
 
 public class Penguin extends Animal implements Carnivore, Trickster {
     public String trick;
