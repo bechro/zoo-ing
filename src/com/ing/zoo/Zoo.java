@@ -1,5 +1,10 @@
 package com.ing.zoo;
 
+import com.ing.zoo.animals.*;
+import com.ing.zoo.interfaces.Carnivore;
+import com.ing.zoo.interfaces.Herbivore;
+import com.ing.zoo.interfaces.Trickster;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 

@@ -1,4 +1,8 @@
-package com.ing.zoo;
+package com.ing.zoo.animals;
+
+import com.ing.zoo.interfaces.Carnivore;
+import com.ing.zoo.interfaces.Herbivore;
+import com.ing.zoo.interfaces.Trickster;
 
 public class Chimpanzee extends Animal implements Herbivore, Carnivore, Trickster {
     public String trick;
