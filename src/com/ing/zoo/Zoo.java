@@ -43,19 +43,24 @@ public class Zoo {
                             Animal::sayHello,
                             () -> System.out.println("No animal found with name: " + name));
 
-        } else if (input.contains(commands.getFirst())) {
+        } else if (input.equals(commands.getFirst())) {
             animals.forEach(Animal::sayHello);
-        } else if (input.contains(commands.get(1))) {
-
+        } else if (input.equals(commands.get(1))) {
             animals.forEach(animal -> {
                 if (animal instanceof Herbivore) {
                     ((Herbivore) animal).eatLeaves();
                 }
             });
-        } else if (input.contains(commands.get(2))) {
+        } else if (input.equals(commands.get(2))) {
             animals.forEach(animal -> {
                 if (animal instanceof Carnivore) {
                     ((Carnivore) animal).eatMeat();
+                }
+            });
+        } else if (input.equals(commands.getLast())) {
+            animals.forEach(animal -> {
+                if (animal instanceof Trickster) {
+                    ((Trickster) animal).performTrick();
                 }
             });
         } else {
